@@ -25,5 +25,5 @@ urlpatterns = [
     path('', views.index),
     path('index01', views.index01),
     path('index02', views.index02),
-    path('map/home', mapviews.home)
+    path('maps/home', mapviews.home)
 ]
