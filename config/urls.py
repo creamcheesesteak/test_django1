@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from maps import views as mapviews
 from home import views
 
 urlpatterns = [
@@ -23,5 +24,6 @@ urlpatterns = [
     path('home', views.index),
     path('', views.index),
     path('index01', views.index01),
-    path('index02', views.index02)
+    path('index02', views.index02),
+    path('map/home', mapviews.home)
 ]
