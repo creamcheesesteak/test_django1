@@ -1,4 +1,4 @@
-import folium as folium
+import folium
 from django.shortcuts import render
 
 # Create your views here.
