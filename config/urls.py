@@ -18,6 +18,7 @@ from django.urls import path
 
 from maps import views as mapviews
 from home import views
+from board import views as boardviews
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,5 +26,6 @@ urlpatterns = [
     path('', views.index),
     path('index01', views.index01),
     path('index02', views.index02),
-    path('maps/home', mapviews.home)
+    path('maps/home', mapviews.home),
+    path('board/list', boardviews.list)
 ]
